@@ -4,6 +4,20 @@ body {
   margin: 0;
 }
 
+/* From a minimum width of 650px and bigger */
+@media (min-width: 500px) and (orientation: landscape) {
+  body {
+    background: orange;
+  }
+}
+
+/* From a minimum width of 400px and bigger */
+/* @media (min-width: 400px) and (max-width: 650px) {
+  body {
+    background: purple;
+  }
+} */
+
 /* Typography */
 
 h1 {
@@ -36,21 +50,24 @@ img {
   margin: 0 auto;
 }
 
+/* Columns layout */
 .columns {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
   margin: 1em 0;
 }
 
 .col-1 {
-  width: 25%;
+  width: 20%;
 }
 
 .col-2 {
-  width: 50%;
+  width: 45%;
 }
 
 .col-3 {
-  width: 75%;
+  width: 70%;
 }
 
 .col-bg {
