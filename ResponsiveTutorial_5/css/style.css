@@ -27,6 +27,10 @@ h1 {
   margin: 0;
 }
 
+h3 {
+  color: #1792d2;
+}
+
 a {
   color: #1792d2;
 }
@@ -233,4 +237,11 @@ footer {
   color: white;
   text-align: center;
   padding: 3em;
+}
+
+.image-full {
+  max-height: 300px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 2em;
 }
