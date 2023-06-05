@@ -136,6 +136,10 @@ a:focus {
   color: #1792d2;
 }
 
+.current-page {
+  text-decoration: underline 4.5px solid;
+}
+
 @media (max-width: 675px) {
   nav ul {
     flex-direction: column;
@@ -208,6 +212,10 @@ a:focus {
 .widget-title,
 .widget-recent-title {
   font-size: 1rem;
+}
+
+.widget-post-title {
+  color: #143774;
 }
 
 .widget-title {
