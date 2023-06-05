@@ -227,3 +227,10 @@ a:focus {
 .widget-image {
   order: -1;
 }
+
+footer {
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 3em;
+}
