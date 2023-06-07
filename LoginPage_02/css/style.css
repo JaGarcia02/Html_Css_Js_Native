@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #f0ece2;
+}
+
+.container {
+  border: 2px solid silver;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 450px;
+}
+
+.container h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+form .input-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
+  padding: 0 50px;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+}
+
+form .input-text input {
+  width: 68%;
+  height: 30px;
+  padding: 0 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+form .input-text label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+form .input-text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+  align-items: start;
+  padding: 0 50px;
+}
+
+form .input-text2 input {
+  width: 68%;
+  height: 30px;
+  padding: 0 5px;
+  outline: none;
+}
+
+form .input-text2 label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+form .btn-submit {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+form .btn-submit button {
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: #363636;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form .btn-submit button:hover {
+  background: white;
+  color: #363636;
+  border: 2px solid #363636;
+  transition: 0.2s;
+}
+
+.txt-bottom {
+  margin-top: 3.7rem;
+  text-align: center;
+  font-size: 14px;
+}
