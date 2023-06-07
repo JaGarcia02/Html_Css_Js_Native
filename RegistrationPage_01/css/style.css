@@ -145,4 +145,11 @@ form .button input:hover {
   form .gender-details .category {
     width: 100%;
   }
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
 }
