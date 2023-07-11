@@ -23,7 +23,7 @@ nav {
   align-items: center;
 }
 nav img {
-  width: 100px;
+  width: 150px;
 }
 .nav-links {
   flex: 1;
@@ -363,6 +363,8 @@ h3 {
   margin: 0 13px;
   cursor: pointer;
   padding: 18px 0;
+  font-size: 25px;
+  width: 80px;
 }
 
 .fa-heart {
