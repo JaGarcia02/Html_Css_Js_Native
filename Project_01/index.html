@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>University Website</title>
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="./logo/logo-no-background.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Worlds Coolest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+          doloribus. <br />
+          Numquam, a corrupti, perspiciatis quia ex molestiae harum ipsam fuga
+          optio voluptate ea molestias possimus!
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+        magni, unde possimus nulla eos illum vero eligendi odio rerum dolore
+        repellendus repellat aspernatur quibusdam ullam libero neque aliquid,
+        quisquam ipsa!
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            numquam officiis eum quia itaque esse facilis necessitatibus, odio
+            hic molestiae corrupti deleniti et, unde fugiat.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            recusandae libero tenetur mollitia dignissimos, dolores reiciendis
+            ipsam quibusdam quo, molestias, enim omnis ipsum ex corrupti labore
+            voluptate tempora laborum praesentium!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+            magnam ducimus non fugiat sunt quae maiores vel libero facere
+            temporibus quidem beatae dolorem reprehenderit optio rem, et ex
+            molestias cum sit amet laboriosam illo nulla? Aliquam, numquam
+            obcaecati maxime quo qui corrupti labore magnam porro!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
