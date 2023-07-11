@@ -265,3 +265,107 @@ h3 {
   border-radius: 10px;
   object-fit: cover;
 }
+
+/* ============================ 4th Content ============================ */
+
+/* ============================ 5th Content ============================ */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.testimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-right: 10px;
+  text-align: left;
+  background: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+.testimonials-col img {
+  height: 60px;
+  width: 150px;
+  margin-right: 30px;
+  border-radius: 55%;
+  object-fit: cover;
+}
+.testimonials-col p {
+  padding: 0;
+}
+
+.testimonials-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonials-col .fa {
+  color: #f44336;
+}
+
+/* Responsiveness */
+@media (max-width: 700px) {
+  .testimonials-col img {
+    height: 50px;
+    margin-left: 0px;
+    width: 100%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+}
+/* ============================ 5th Content ============================ */
+
+/* ============================ 6th Content ============================ */
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/campus6.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 18px;
+  }
+}
+/* ============================ 6th Content ============================ */
+
+/* ============================ 7th Content ============================ */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+.fa-heart {
+  color: #f44336;
+}
+/* ============================ 7th Content ============================ */
