@@ -234,3 +234,34 @@ h3 {
   bottom: 45%;
   opacity: 1;
 }
+/* ============================ 3rd Content ============================ */
+
+/* ============================ 4th Content ============================ */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.facilities-col p {
+  padding: 0;
+}
+.facilities-col h3 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: left;
+}
+
+.facilities img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
