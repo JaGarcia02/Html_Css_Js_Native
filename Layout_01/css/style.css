@@ -1,0 +1,491 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5% 10%;
+  background-color: #131416;
+}
+
+.feed {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 350px;
+  grid-gap: 16px;
+  margin: 40px 0 40px 0;
+}
+
+.card-category {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ecf0f1;
+  margin: 0;
+}
+
+.card-title {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ecf0f1;
+  margin: 10px 0 0 0;
+}
+
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.card:nth-child(1) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/travel1.jpg");
+}
+.card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/iceland1.jpg");
+}
+.card:nth-child(3) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/hills1.jpg");
+}
+.card:nth-child(4) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/guide1.jpg");
+}
+.card:nth-child(5) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/nikonZ7.jpg");
+}
+.card:nth-child(6) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/biking.jpg");
+}
+.card:nth-child(7) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/nationalPark.jpg");
+}
+.card:nth-child(8) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/bedBreakfast.jpg");
+}
+.card:nth-child(9) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/iceland2.jpg");
+}
+
+.card:nth-child(1),
+:nth-child(6),
+:nth-child(7) {
+  grid-column-start: span 6;
+}
+
+.card:nth-child(2),
+:nth-child(3),
+:nth-child(4),
+:nth-child(5),
+:nth-child(8),
+:nth-child(9) {
+  grid-column-start: span 3;
+}
+
+@media screen and (max-width: 1200px) {
+  .card:nth-child(n) {
+    grid-column-start: span 6;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card:nth-child(n) {
+    grid-column-start: span 12;
+  }
+}
+
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Mulish:wght@700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 5% 10%;
+  background-color: #131416;
+}
+
+.feed {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr
+    16px 1fr 16px 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 350px;
+  grid-gap: 16px;
+  margin: 40px 0 40px 0;
+}
+
+.card-category {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ecf0f1;
+  margin: 0;
+}
+
+.card-title {
+  font-family: "Libre Baskerville", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #ecf0f1;
+  margin: 10px 0 0 0;
+}
+
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 20px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.card:nth-child(1) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/travel1.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/travel1.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/travel1.jpg");
+}
+.card:nth-child(2) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/iceland1.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/iceland1.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/iceland1.jpg");
+}
+.card:nth-child(3) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/hills1.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/hills1.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/hills1.jpg");
+}
+.card:nth-child(4) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/guide1.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/guide1.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/guide1.jpg");
+}
+.card:nth-child(5) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/nikonZ7.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/nikonZ7.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/nikonZ7.jpg");
+}
+.card:nth-child(6) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/biking.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/biking.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/biking.jpg");
+}
+.card:nth-child(7) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/nationalPark.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/nationalPark.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/nationalPark.jpg");
+}
+.card:nth-child(8) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/bedBreakfast.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/bedBreakfast.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/bedBreakfast.jpg");
+}
+.card:nth-child(9) {
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(10, 10, 10, 0)),
+      color-stop(50%, rgba(10, 10, 10, 0)),
+      to(rgba(10, 10, 10, 0.7))
+    ),
+    url("../images/iceland2.jpg");
+  background-image: -o-linear-gradient(
+      top,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/iceland2.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(10, 10, 10, 0) 0%,
+      rgba(10, 10, 10, 0) 50%,
+      rgba(10, 10, 10, 0.7) 100%
+    ),
+    url("../images/iceland2.jpg");
+}
+
+.card:nth-child(1),
+:nth-child(6),
+:nth-child(7) {
+  grid-column-start: span 6;
+}
+
+.card:nth-child(2),
+:nth-child(3),
+:nth-child(4),
+:nth-child(5),
+:nth-child(8),
+:nth-child(9) {
+  grid-column-start: span 3;
+}
+
+@media screen and (max-width: 1200px) {
+  .card:nth-child(n) {
+    grid-column-start: span 6;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card:nth-child(n) {
+    grid-column-start: span 12;
+  }
+}
